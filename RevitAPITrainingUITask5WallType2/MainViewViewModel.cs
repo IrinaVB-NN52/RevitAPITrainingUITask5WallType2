@@ -49,7 +49,7 @@ namespace RevitAPITrainingUITask5WallType2
                 {
                     if (pickedObject is WallType)
                     {
-                        var oWall = pickedObject as WallType;
+                        var Wall = pickedObject as WallType;
 
                     }
                 }
