@@ -41,7 +41,7 @@ namespace RevitAPITrainingUITask5WallType2
             if (PickedObjects.Count == 0 || SelectedWallType == null)
                 return;
 
-            using (var ts = new Transaction(doc, "Изминение типа стен"))
+            using (var ts = new Transaction(doc, "Изминение типа стен"))//не понимаю как собирается транзакция(
             {
                 ts.Start();
 
@@ -50,7 +50,7 @@ namespace RevitAPITrainingUITask5WallType2
                     if (pickedObject is WallType)
                     {
                         var Wall = pickedObject as WallType;
-
+                        //наверное тут должен быть ID?
                     }
                 }
 
